@@ -3,17 +3,23 @@
 	color: #FFD700;
 }
 
-main
+body
 {
 	display: flex;
-	height: 1000px;
+	flex-direction: column;
+	min-height: 100vh;
+}
 
+main
+{
+	flex: 1;
+	display: flex;
 	align-items: center;
-	flex-direction: column;	
+	flex-direction: column;
+	justify-content: center;
 
 	margin-left: 10%;
 	margin-right: 10%;
-	margin-bottom: 50px;
 }
 
 .main_title
