@@ -61,7 +61,7 @@ Flexbox + media queries natives sur 6 breakpoints (de 370 px à 1250 px), sans B
 
 - **HTML5** sémantique
 - **CSS3** : Flexbox, pseudo-sélecteurs (`:checked`, `:hover`, `:first-of-type`), `@font-face`
-- Police [Quicksand](https://fonts.google.com/specimen/Quicksand) auto-hébergée (3 graisses)
+- Police [Quicksand](https://fonts.google.com/specimen/Quicksand) auto-hébergée (3 niveaux de gras)
 - Aucune dépendance externe
 
 ---
