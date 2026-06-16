@@ -98,9 +98,9 @@ aside
 	padding-top: 5px;
 }
 
-.selection img 
+.selection img
 {
-	width: 90%;
+	width: 100%;
 }
 
 .selection a 
@@ -163,17 +163,22 @@ aside
 		justify-content: center;
 	}
 
-	.message
-	{
-		width: 33%;
-	}
-
 	.selection
 	{
-		column-gap: 20px;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 90%;
+		column-gap: 30px;
 	}
-	
-	.selection .message a 
+
+	.selection .message
+	{
+		flex: 1 1 280px;
+		max-width: 380px;
+	}
+
+	.selection .message a
 	{
 		text-decoration: none;
 	}
