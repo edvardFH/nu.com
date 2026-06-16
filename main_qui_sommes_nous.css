@@ -1,0 +1,36 @@
+body
+{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main
+{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.main_title
+{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+	align-items: center;
+}
+
+.main_title h1
+{
+	font-size: x-large;
+}
+
+.main_title h2
+{
+	font-size: medium;
+}
