@@ -1,4 +1,4 @@
-# Nu — Site marchand HTML/CSS pur
+# Nu : Site marchand HTML/CSS pur
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
@@ -6,7 +6,7 @@
 
 > **Défi :** recréer un site e-commerce complet sans une seule ligne de JavaScript.
 
-Projet personnel pour approfondir HTML5 et CSS3 en repoussant leurs limites — navigation mobile, menus déroulants, sélecteurs interactifs — entièrement sans JS.
+Projet personnel pour approfondir HTML5 et CSS3 en repoussant leurs limites : navigation mobile, menus déroulants, sélecteurs interactifs : entièrement sans JS.
 
 ---
 
@@ -14,9 +14,9 @@ Projet personnel pour approfondir HTML5 et CSS3 en repoussant leurs limites — 
 
 | Fichier | Description |
 |---|---|
-| `index.html` | Accueil — hero, promotions, collections |
+| `index.html` | Accueil : hero, promotions, collections |
 | `costumes_homme.html` | Catalogue produits (grille responsive) |
-| `costume_tanin.html` | Fiche produit — galerie, sélecteur de taille, ajout au panier |
+| `costume_tanin.html` | Fiche produit : galerie, sélecteur de taille, ajout au panier |
 | `full_bag.html` | Panier rempli |
 | `empty_bag.html` | Panier vide |
 | `qui_sommes_nous.html` | À propos |
@@ -32,7 +32,7 @@ Le menu mobile fonctionne via une checkbox cachée.
 #scrolling_menu:checked + .menu { display: flex; }
 ```
 
-Une `<label>` agit comme bouton — l'état est géré par `:checked`, aucun event listener.
+Une `<label>` agit comme bouton : l'état est géré par `:checked`, aucun event listener.
 
 ### Sélecteur de taille interactif
 Les radio buttons sont masqués et remplacés par des `<label>` stylisées. L'état actif est rendu via `:checked + label`.
