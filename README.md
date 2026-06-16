@@ -1,80 +1,80 @@
-# Nu : Site marchand HTML/CSS pur
+# Nu — Pure HTML/CSS E-Commerce Site
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![No JavaScript](https://img.shields.io/badge/JavaScript-aucun-lightgrey?style=flat&logo=javascript)
+![No JavaScript](https://img.shields.io/badge/JavaScript-none-lightgrey?style=flat&logo=javascript)
 
-> **Défi :** recréer un site e-commerce complet sans une seule ligne de JavaScript.
+> **Challenge:** rebuild a complete e-commerce site without a single line of JavaScript.
 
-Projet personnel pour approfondir HTML5 et CSS3 en repoussant leurs limites : navigation mobile, menus déroulants, sélecteurs interactifs : entièrement sans JS.
+A personal project to push HTML5 and CSS3 to their limits (mobile navigation, dropdowns, interactive selectors) without any JS.
 
 ---
 
 ## Pages
 
-| Fichier | Description |
+| File | Description |
 |---|---|
-| `index.html` | Accueil : hero, promotions, collections |
-| `costumes_homme.html` | Catalogue produits (grille responsive) |
-| `costume_tanin.html` | Fiche produit : galerie, sélecteur de taille, ajout au panier |
-| `full_bag.html` | Panier rempli |
-| `empty_bag.html` | Panier vide |
-| `qui_sommes_nous.html` | À propos |
+| `index.html` | Home : hero, promotions, collections |
+| `costumes_homme.html` | Product catalog (responsive grid) |
+| `costume_tanin.html` | Product page : gallery, size selector, add to cart |
+| `full_bag.html` | Filled cart |
+| `empty_bag.html` | Empty cart |
+| `qui_sommes_nous.html` | About |
 
 ---
 
-## Techniques CSS sans JavaScript
+## CSS Techniques Without JavaScript
 
-### Menu burger
-Le menu mobile fonctionne via une checkbox cachée.
+### Burger menu
+The mobile menu works via a hidden checkbox.
 
 ```css
 #scrolling_menu:checked + .menu { display: flex; }
 ```
 
-Une `<label>` agit comme bouton : l'état est géré par `:checked`, aucun event listener.
+A `<label>` acts as the toggle button : state is managed by `:checked`, no event listener.
 
-### Sélecteur de taille interactif
-Les radio buttons sont masqués et remplacés par des `<label>` stylisées. L'état actif est rendu via `:checked + label`.
+### Interactive size selector
+Radio buttons are hidden and replaced by styled `<label>` elements. The active state is rendered via `:checked + label`.
 
 ```css
 input[name="size_"] { display: none; }
 input:checked + label { border: 1px solid #1f326d; }
 ```
 
-### Sous-menus au survol
-Les sous-menus sont cachés par défaut et révélés au `:hover` du parent, positionnés en absolu.
+### Hover dropdowns
+Submenus are hidden by default and revealed on parent `:hover`, absolutely positioned.
 
-### Swap d'icônes au hover
-Les icônes sociales passent en niveaux de gris au survol via la propriété `content`.
+### Icon swap on hover
+Social icons switch to grayscale on hover via the `content` property.
 
 ```css
 #img_yt:hover { content: url("images/yt_g.png"); }
 ```
 
-### Responsive sans framework
-Flexbox + media queries natives sur 6 breakpoints (de 370 px à 1250 px), sans Bootstrap ni autre dépendance.
+### Responsive without a framework
+Flexbox + native media queries across 6 breakpoints (from 370px to 1250px), no Bootstrap or other dependency.
 
 ---
 
 ## Stack
 
-- **HTML5** sémantique
-- **CSS3** : Flexbox, pseudo-sélecteurs (`:checked`, `:hover`, `:first-of-type`), `@font-face`
-- Police [Quicksand](https://fonts.google.com/specimen/Quicksand) auto-hébergée (3 niveaux de gras)
-- Aucune dépendance externe
+- Semantic **HTML5**
+- **CSS3** : Flexbox, pseudo-selectors (`:checked`, `:hover`, `:first-of-type`), `@font-face`
+- [Quicksand](https://fonts.google.com/specimen/Quicksand) font self-hosted (3 weights)
+- No external dependencies
 
 ---
 
-## Lancer le projet
+## Run the project
 
 ```bash
 git clone https://github.com/<username>/nu.com.git
 cd nu.com
-# Ouvrir index.html dans un navigateur
+# Open index.html in a browser
 ```
 
-Aucun build, aucun serveur requis.
+No build step, no server required.
 
 ---
 
@@ -88,7 +88,7 @@ nu.com/
 ├── full_bag.html
 ├── empty_bag.html
 ├── qui_sommes_nous.html
-├── style.css               # Styles globaux, @font-face
+├── style.css               # Global styles, @font-face
 ├── header.css
 ├── footer.css
 ├── main_index.css
